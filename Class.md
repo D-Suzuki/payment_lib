@@ -1,4 +1,4 @@
-## MobilePayment Class
+# MobilePayment Class
 MobilePaymentIos、MobilePaymentAndroidの親クラス。
 抽象クラスであり、課金結果ステータスの定数と
 いくつかのメソッドをもつ。
@@ -30,7 +30,7 @@ protected function setPaymentResultCode( $resultCode )
 abstract public function verify()
 ```
 
-## MobilePaymentIos Class
+# MobilePaymentIos Class
 IOS用支払クラス。
 MobilePayment親クラスにもつ。
 
@@ -85,15 +85,16 @@ if ( $paymentObj->getPaymentResultCode() == MobilePayment::PAYMENT_RESULT_CODE_C
 ・正しい商品かチェック
 ・2重決済チェック
 
-※サブクラスサンプル
-sample_sub_class/PaymentIos.php
 #####
 #   #
 #####
 で囲われたコメント部分を実装してください。
 ```
 
-## MobilePaymentAndroid Class
+※サブクラスサンプル
+https://github.com/up-system/payment_lib/blob/master/sample_sub_class/PaymentIos.php
+
+# MobilePaymentAndroid Class
 Android用支払クラス。
 MobilePayment親クラスにもつ。
 
@@ -145,10 +146,11 @@ if ( $paymentObj->getPaymentResultCode() == MobilePayment::PAYMENT_RESULT_CODE_C
 ・正しい商品かチェック
 ・2重決済チェック
 
-※サブクラスサンプル
-sample_sub_class/PaymentAndroid.php
 #####
 #   #
 #####
 で囲われたコメント部分を実装してください。
 ```
+
+※サブクラスサンプル
+https://github.com/up-system/payment_lib/blob/master/sample_sub_class/PaymentAndroid.php
